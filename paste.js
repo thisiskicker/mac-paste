@@ -9,4 +9,6 @@ async function paste() {
     await nut.keyboard.type(text);
 }
 
-paste();
+paste().then(() => {
+    console.log('Pasting completed');
+});
